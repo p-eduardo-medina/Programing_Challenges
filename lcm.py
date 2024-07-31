@@ -12,7 +12,7 @@ def prime_factors(n):
                 factors[i] = 1
     if n > 1:
         if n in factors.keys():
-            factors[n] += 1
+            factors[n] +=1 
         else:
             factors[n] = 1
     return factors
@@ -30,14 +30,12 @@ def lcm(nums):
     return sum
         
     
-print(lcm([1, 2, 3, 4, 5, 6, 7, 8, 9]))
-#2520
+print(f' El programa obtuvo {lcm([1, 2, 3, 4, 5, 6, 7, 8, 9])} y se pretendia obtener 2520')
 
-print(lcm([5]))
-#5
+print(f' El programa obtuvo {lcm([9])} y se pretendia obtener 9')
 
-print(lcm([5, 7, 11]))
-#385
+print(f' El programa obtuvo {lcm([5, 7, 11])} y se pretendia obtener 385')
 
-print(lcm([5, 7, 11, 35, 55, 77]))
-#385
+print(f' El programa obtuvo {lcm([5, 7, 11, 35, 55, 77])} y se pretendia obtener 385')
+
+print(f' El programa obtuvo {lcm([1,2,3,4,5])}')
