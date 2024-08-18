@@ -14,5 +14,5 @@ def josephus(people):
     for i in range(len(p)):
         if p[i]!=0:return i+1
 
-print(f'El resultado es {josephus(100)}')
+print(f'El resultado es {josephus(41)}')
 #19
