@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Cart Quantity
+        </title>
+    </head>
+
+<body>
+    <!--Botones-->
+    <button onclick="
+        console.log(`Cart Quantity: ${carQuantity}`) ;
+    ">
+        Show Quantity
+    </button>
+
+    <button onclick="
+        carQuantity = carQuantity+1;
+        console.log(`Cart Quantity: ${carQuantity}`) ;
+    ">Add to Car</button>
+    
+    <button onclick="
+        carQuantity = carQuantity+2;
+        console.log(`Cart Quantity: ${carQuantity}`) ;
+    ">+2</button>
+    
+    <button onclick="
+        carQuantity = carQuantity+3;
+        console.log(`Cart Quantity: ${carQuantity}`) ;
+    ">+3</button>
+    
+    <button onclick="
+        carQuantity = 0;
+        console.log(`Cart Quantity: ${carQuantity}`) ;
+    ">Resert Cart</button>
+    
+    <!-- Script del código -->
+    <script>  
+        const var2 = 3;// const is unvariable
+        var var3 = 3; // create a variable like <<let>>
+        const message = "Hello World";
+        let carQuantity = 0;
+        console.log(typeof message);
+    </script>
+</body>
+</html>
