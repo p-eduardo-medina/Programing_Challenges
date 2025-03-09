@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+        <title>
+            Document Object Model (DOM)
+        </title>
+    </head>
+
+    <body>
+        <button>Hello</button>
+        <button class = "Js-Button">Second Button</button>
+
+        <script>  //This is how you comment.
+            console.log(document.querySelector('button').innerHTML);//This just refers the frist button.
+            document.querySelector('button')
+                .innerHTML = 'Changed';
+            
+            //console.log(document.querySelector('.Js-Button'));//Is looking for class -> Class Selector
+            const buttonElement = document.querySelector('.Js-Button');
+            console.log(buttonElement);
+
+
+            /*
+            console.log(document.title);
+            document.title = 'Changed';
+
+            console.log(document.body);  
+            console.log(typeof document.body);
+            
+            console.log(document.body.innerHTML);//Elemnts inside the body document
+            //document.body.innerHTML = "Changed";
+            document.body.innerHTML = '<button>There</button>'
+            
+            document.body.innerHTML = 'Hello';//Removes everything named hello and replace it by only string  
+            document.title = 'Good Job';//Replace only the Title
+            */
+            
+        </script>
+    </body>
+    </html>

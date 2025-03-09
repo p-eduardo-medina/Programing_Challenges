@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+        <title>
+            Objects
+        </title>
+    </head>
+
+    <body>
+        <script>  //This is how you comment.
+           const product = {
+            name:'Socks',
+            price: 250
+           };
+           /*
+           const score={
+            win:0,
+            lose:0,
+            tie:0
+           };
+
+           //const score = JSON.parse(localStorage.getItem('scoore'))
+           console.log(product);
+           console.log(product.name);
+           console.log(product.price);
+           console.log(product['name']);//Bracket notation
+
+           
+           product.name = 'Cotton Socks';
+           console.log(product.name);
+
+           product.newProperty = true;
+           console.log(product);
+
+           delete product.newProperty;
+           console.log(product);
+
+           const product2 = {
+            name:'Shirt',
+            ['Delivery-time']: '1 day',
+            rating: 
+            {
+                str: 'Hey there',
+                stars:3.5,
+                count:87
+            },
+            fun2: function functions1(){
+                console.log('Function inside Object');
+            }
+           };
+           console.log(product2.rating.str);
+           console.log(product2['rating']['str']);
+           product2.fun2();
+           console.log(typeof console);
+
+           console.log(JSON.stringify(product2));//json DOES NOT support function, by example JSON
+           const jsonString = JSON.stringify(product2);
+           console.log(JSON.parse(jsonString));
+
+
+           localStorage.setItem('Message','Hello');//LOcalsotarege only supports str
+           //It's a type of variable that doesn't disappear when the page is reloaded.   
+           console.log(localStorage.getItem('message'));
+           localStorage.setItem(
+                    'Score',
+                    JSON.stringify(score)
+            ) //SAve score in local Storage
+            console.log(localStorage.getItem('Score'))
+
+            if(score===null){ // if( !score )
+                score={
+                    win:0,
+                    lose:0,
+                    tie:0
+                };
+            }
+
+            //As well
+            let score = JSON.parse(localStorage.getItem('score')) || {
+                win:0,
+                lose:0,
+                tie:0
+            };
+
+           */
+
+           console.log('hello'.length);
+           console.log('hello'.toUpperCase());
+
+           const object1 = {
+            message:'hello'
+           }
+           const object2 = object1;
+           object1.message = 'Good Job';
+           console.log(object1)
+
+           const object3 = {
+            message:'hello there',
+            price:10
+           }
+           const message2 = object2.message;
+           //  =
+           const { message,price } = object3;
+           console.log(message + ' and ' + message2);
+           console.log(price);
+
+           const object4 = {
+            //message: message
+            message,
+            method:function function1(){
+                console.log('methode');
+            },
+            method2(){
+                console.log('Methode2')
+            }
+           }
+           console.log(object4)
+           object4.method2();
+
+        </script>
+    </body>
+    </html>
