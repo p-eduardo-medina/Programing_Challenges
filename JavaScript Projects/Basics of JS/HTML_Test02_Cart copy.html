@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Cart Quantity
+        </title>
+        <link 
+                rel ="stylesheet"   
+                href="Styles/Css_Test02_CArt copy.css">
+    </head>
+
+<body>
+    <!--Botones-->
+    <p class="title">Add something.</p>
+
+    <button class = "move-botton" onclick="
+        console.log(`Cart Quantity: ${carQuantity}`) ;
+    "><img src = "Images/showQuantity.png" class = "imShowQuantity buttonImg"></button>
+
+    <button class = "move-botton" onclick="
+        carQuantity = carQuantity+1;
+        console.log(`Cart Quantity: ${carQuantity}`) ;
+    "><img src = "Images/Add1.png" class = "imAdd buttonImg" ></button>
+    
+    <button class = "move-botton" onclick="
+        carQuantity = carQuantity+2;
+        console.log(`Cart Quantity: ${carQuantity}`) ;
+    "><img src = "Images/Add2.png" class = "imAdd2 buttonImg"></button>
+    
+    <button class = "move-botton" onclick="
+        carQuantity = carQuantity+3;
+        console.log(`Cart Quantity: ${carQuantity}`) ;
+    "><img src = "Images/Add3.png" class = "imAdd3 buttonImg"></button>
+    
+    <button class = "move-botton" onclick="
+        carQuantity = 0;
+        console.log(`Cart Quantity: ${carQuantity}`) ;
+    "><img src = "Images/shopCar.png" class = "imShopCar buttonImg"></button>
+    
+    <p class="ShopList">Shop List
+        <img src="Images/shopCar.png" class = "imgInParr">
+        <img src="Images/Add1.png" class="imgInParr">
+        Let's shop.
+    </p>
+    
+    <button class="fun" onclick="
+        printOnParra(' -> Hey There!');
+    ">Funny String</button>
+
+    <p class="funnyFaceParr"> </p>
+
+
+
+
+    <!-- Script del código -->
+    <script
+        src="Scripts/Js_Test02_Cart copy.js"></script>
+</body>
+</html>

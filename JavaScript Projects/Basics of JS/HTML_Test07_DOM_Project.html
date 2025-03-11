@@ -1,20 +1,102 @@
 <!DOCTYPE html>
     <html>
     <head>
-        <title>
-            DOM Project
-        </title>
+        <title>DOM Project</title>
+        <style>
+            body {
+                font-family: Arial;
+            }
+
+            button{
+                cursor: pointer;
+            }
+
+            .subscribe-button{
+                border: none;                 
+                background-color: black;
+                color: white;
+                padding-top:10px;
+                padding-bottom: 10px;
+                padding-left: 15px;
+                padding-right: 15px;
+                font-weight: bold;
+                border-radius: 50px;
+                margin-bottom: 20px;
+                margin-top: 10px;
+            }
+
+            .is-subscribed{
+                background-color: rgb(200,200,200) ;
+                color: black;
+            }
+            
+            .cost-input{
+                font-size: 15px;
+                /*
+                padding-top: 10px;
+                padding-bottom: 10px;
+                padding-left: 10px;
+                padding-right: 10px;
+                =
+                */
+                padding: 12px;
+            }
+
+            .calculate-buttton{
+                font-size: 15px;
+                padding: 12px;
+                background-color: green;
+                color: white;
+                border: none;
+                border-radius: 20px;
+                margin-left: 15px;
+            }
+            
+        </style>
     </head>
 
     <body>
         <p>YouTube Subscribe Button</p>
+
         <button onclick="
             subscribe();
-        " class = "js-subscribe-button">Subscribe</button> <!--PUT NO SPACES IN INNERTEXT-->
-
+            textOnParr('Hello World :D');
+        " class = "js-subscribe-button subscribe-button">Subscribe</button> <!--PUT NO SPACES IN INNERTEXT-->
+        
+        <p class = "js-parragraph">Amazon Shipping Calculator</p>
+        <input  placeholder="Cost of Order" 
+                class ="js-cost_input cost-input"
+                onkeydown=" //When we press a key
+                    //console.log(event);//event is an object    
+                    handleCostKey(event);
+                ">
+        <button onclick="
+            calculateTotal();
+        " class="calculate-buttton">Calculate</button>
+        <p class="js-totalCost"></p>
 
 
         <script>  
+            window.document;
+            window.console.log('Window');
+            window.alert();
+
+            function handleCostKey(event){
+                if(event.key==='Enter'){
+                    calculateTotal();
+                };
+            };
+
+            function calculateTotal(){
+                const inpuElement = document.querySelector(".js-cost_input");
+                let cost = Number(inpuElement.value); //NUmber turns the variable in a number type
+                if(cost<40){
+                    cost = cost+10;
+                }
+                document.querySelector(".js-totalCost")
+                    .innerHTML = `Total cost is: $${cost}`;
+            };
+
             function subscribe(){
                 const subsButton =  document.querySelector('.js-subscribe-button');
                 console.log(subsButton);
@@ -22,13 +104,22 @@
                 if(subsButton.innerText === 'Subscribe'){
 
                     subsButton.innerHTML = 'Subscribed';
+                    subsButton.classList.add('is-subscribed');//Add a class
 
                 }else{
                 
                     subsButton.innerHTML = 'Subscribe';
+                    subsButton.classList.remove('is-subscribed');//remove a class
 
                 }
             };
+            
+            function textOnParr(text){
+                const textPar = document.querySelector(".js-parragraph");
+                textPar.innerHTML = text;
+            }
+        
+            
         </script>
     </body>
     </html>
