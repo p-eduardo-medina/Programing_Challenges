@@ -23,13 +23,15 @@ body{
     font-weight: bold;
     margin: 25px;
 }
-.imgInParr{
+.imgInParr1,
+.imgInParr2{
     height: 40px;
     margin-top: 60px;
     margin-left: 20px;
     margin-right: 20px;
 }
-.fun{
+.fun,
+.autoPlayButton{
     cursor: pointer;
     background-color: darkcyan;
     border-radius: 10px;
@@ -44,7 +46,9 @@ body{
     font-family: 'Times New Roman', Times, serif;
     font-size: 20px;
 }
-
+.autoPlayButton{
+    background-color: darkturquoise;
+}
 .funnyFaceParr{
     font-family: cursive;
     font-size: 35px;

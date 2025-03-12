@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+        <title>
+            Advance Functions Part:2
+        </title>
+    </head>
+
+    <body>
+        <button onclick="" class="jsButton">Click</button>
+        <script>  
+            const buttonElement = document.querySelector('.jsButton');
+            let i = 0;
+            const eventListener = () => {
+                console.log("Click");
+                console.log(i);
+                i++;
+            };
+
+            buttonElement.addEventListener('click',eventListener);
+            //buttonElement.removeEventListener('click',eventListener);
+            buttonElement.addEventListener('click',() => {
+                console.log("Click -> 2");
+            });
+            /*
+            const regularFunction = function(param, param2){
+                console.log("Hello");
+                return 5;
+            };
+            const arrowFunction = (param, param2) => {
+                console.log("Hello World");
+                return 5;
+            };
+
+            arrowFunction();
+
+            const onePAram = param => {
+                console.log(param+1);
+            };
+            onePAram(2);
+
+            const oneLine = () =>  2+3;;
+            console.log(oneLine());
+
+            ["A","B","C"].forEach((value,index)=>{
+                if(value==="B"){
+                    return;
+                }
+            })
+
+            const object2 = {
+                method: () => {
+                    
+                },
+                method(){
+
+                }
+            }*/
+
+        </script>
+    </body>
+    </html>

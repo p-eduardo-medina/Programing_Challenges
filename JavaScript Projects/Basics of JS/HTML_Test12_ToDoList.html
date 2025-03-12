@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+        <title>To Do List</title>
+        <link 
+        rel ="stylesheet"   
+        href="Styles/Css_Test12_ToDoList.css"><!--This is how you 
+                                        instantiate the css file-->
+    </head>
+
+    <body>   
+        <p>Todo List</p>
+        <div class="todo-input-grid">
+            <input class="js-input name-input" placeholder="Todo name">
+            <input class="js-dueDate dueDate-input" type="date">
+            <button onclick="
+                addTodo();
+            " class="add-todoButton">Add</button> 
+        </div>       
+
+        <button class="trainButton" onclick="
+            changeInnrerText();
+        ">Push for secret message</button>
+
+        <div class="js-toDoList todo-grid"></div><!--This is a containeer-->
+        <!--This is how you instantiate the JS project-->
+        <script src="Scripts/Js_Test12_ToDoList.js">
+            
+        </script>
+    </body>
+    </html>
