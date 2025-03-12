@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+        <title>
+            Advance Features for functions.
+        </title>
+    </head>
+
+    <body>
+        <script>  //This is how you comment.
+            /*
+            function greeting(){
+                console.log('Heloo');
+           } 
+           greeting();
+
+           const num = 2;
+           const function1 = function greeting(){
+            console.log("Hello Wrold");
+           };
+
+           console.log(function1);
+           console.log(typeof function1);
+
+           function1();
+
+           const object1 = {
+                num:2,
+                fun: function (){
+                    console.log('Hello :3');
+                }
+            };
+           object1.fun();
+           function display(param){
+                console.log(param);
+           }
+           display(2);
+
+
+           function run(param){
+                param();
+           }
+           run(function(){
+            console.log("Hello 4");
+           })
+*/
+            setTimeout(function(){//Asynchronous
+                console.log("Time Out");
+                console.log("Time Out 2");
+            }, 3000);
+            console.log('Next Line');
+
+            setInterval(function(){
+                console.log("Interval");
+            }, 3000);
+            console.log("Next Line 2");
+        </script>
+    </body>
+    </html>
+ 

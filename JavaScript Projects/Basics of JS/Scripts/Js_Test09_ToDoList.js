@@ -20,8 +20,55 @@ for(let i=0; i<nums.length; i++){
     numsDouble.push(nums[i]*2);
 }
 console.log(numsDouble);
-    */
-   document.querySelector('.js-dueDate').innerHTML = '1000-01-01'
+    
+const array1 = [1,2,3]
+const [firstValue, secondValue] = [4,5,6]
+
+
+for(let i = 0;i<15;i++){
+    if(i%3==1){
+        console.log('Nop!');
+        continue
+    }
+    console.log(i);
+    if(i==12){
+        break;
+    }
+};
+let i=0;
+while(i<=10){
+    if(i%3 === 0){
+        i++;
+        console.log('Nop!!');
+        continue;
+    }
+    console.log(i);
+    i++;
+}
+*/
+
+function doubleArray(nums){
+    const dubNums = [];
+
+    for(let i=0;i<nums.length;i++){
+        if(nums[i]===0){
+            return dubNums;
+        }
+        dubNums.push(nums[i]*2);
+    }
+    return dubNums;
+}
+
+console.log('Hey')
+console.log(doubleArray([1,2,3,4]));
+console.log(doubleArray([2,4,6,8,0,1]));
+
+
+
+
+
+
+document.querySelector('.js-dueDate').innerHTML = '1000-01-01'
 const toDoList=[
     {name:"Make dinner", dueDate:'2025-03-11'},
     {name:"Wash dishes", dueDate:'2025-03-10'},
